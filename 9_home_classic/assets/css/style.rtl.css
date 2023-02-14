@@ -1,0 +1,312 @@
+/*
+* Theme Name: fungi - One Page Personal Portfolio HTML Template
+* Translator: Maxjn
+* Version: 2.2.4
+* Last Change: 27 Jan 2023
+  Translator URI    : https://www.rtl-theme.com/author/maxjn/products/
+-------------------------------------------------------------------*/
+/*------------- List Of Table -----------
+# Fonts
+# Global Settings
+# Header
+# Hero section
+# About section
+# Skill Section
+# Services Section
+# Resume Section
+# Feature Section
+# Testimonial Section
+# Blog Section
+# Contact Section
+# Site Footer
+------------- List Of Table ----------*/
+
+/* CSS Document */
+@import url(plugins/pe-icon-7-stroke.css);
+@import url(plugins/pe-helper.css);
+@import url(plugins/bootstrap-icons.css);
+@import url(plugins/all.min.css);
+@import url(plugins/bootstrap.min.css);
+@import url(plugins/swiper-bundle.min.css);
+@import url(plugins/leaflet.css);
+@import url(plugins/aos.css);
+@import url(style.css);
+
+/*------------------------------------
+	Fonts
+------------------------------------*/
+@font-face {
+  font-family: IRANSans;
+  src: url("../fonts/IRANSansWeb/IRANSansWeb.eot");
+  src: url("../fonts/IRANSansWeb/IRANSansWeb.eot") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb/IRANSansWeb(FaNum).woff") format("woff"),
+    url("../fonts/IRANSansWeb/IRANSansWeb.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: vazir-bold;
+  src: url("../fonts/vazir/Vazir-Bold.eot");
+  src: url("../fonts/vazir/Vazir-Blod.eot") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Bold-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/*------------------------------------------------------------
+	Global Settings
+-------------------------------------------------------------*/
+body {
+  font-family: "IRANSans", sans-serif;
+  direction: rtl;
+}
+.btn-main,
+.site-footer .footer-bottom ul a,
+.contact-section button,
+.contact-section a,
+.blog-section .post-meta li a,
+.testimonial-section .item-wrapper h4 span,
+.features-section h4 span,
+.site-header a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn-text,
+.btn-ghost {
+  font-family: "vazir-bold", sans-serif;
+}
+
+.container {
+  direction: rtl;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px;
+  }
+}
+
+ul {
+  padding-right: 0;
+}
+
+/*------------------------------------------------------------
+  Header
+  -------------------------------------------------------------*/
+.ms-auto {
+  margin-right: auto;
+  margin-left: 0 !important;
+}
+
+.site-header .nav-social .list-inline-item:last-child {
+  margin-left: 0;
+}
+.site-header .nav-social .list-inline-item {
+  margin-left: 24px;
+  margin-right: 0;
+}
+
+/*------------------------------------------------------------
+  Hero Section
+  -------------------------------------------------------------*/
+
+.hero-area .image-block {
+  text-align: right;
+}
+.hero-area .btn-main {
+  margin-left: 12px;
+  margin-right: 0;
+}
+/*------------------------------------------------------------
+  About Section
+  -------------------------------------------------------------*/
+.about-section .about-img-2 {
+  left: initial;
+  right: 0;
+}
+.about-section .img-wrapper {
+  text-align: right;
+}
+@media (max-width: 1191px) {
+  .hero-area .image-wrapper {
+    margin-top: 136px;
+    margin-bottom: 36px;
+  }
+}
+/*------------------------------------------------------------
+  Skill Section
+  -------------------------------------------------------------*/
+.skill-section .progress-value {
+  left: 0;
+  right: initial;
+}
+
+.skill-section .content-block {
+  padding-left: 72px;
+  padding-right: 0;
+}
+
+@media (max-width: 1199px) {
+  .skill-section .content-block {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+@media (max-width: 360px) {
+  .hero-area .link-group .btn-main {
+    margin-left: 0;
+  }
+}
+/*------------------------------------------------------------
+  Services Section
+  -------------------------------------------------------------*/
+.portfolio-section .item-meta li span {
+  margin-right: 8px;
+  margin-left: initial;
+}
+@media (max-width: 576px) {
+  .service-section .content-wrapper {
+    text-align: right;
+  }
+
+  .service-section .icon-box {
+    width: 84px;
+    height: 84px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+/*------------------------------------------------------------
+  Resume Section
+  -------------------------------------------------------------*/
+.resume-section .icon-block {
+  margin-left: 24px;
+  margin-right: 0;
+}
+.resume-section h4 span {
+  float: left;
+}
+@media (max-width: 1199px) {
+  .resume-section h4 span {
+    float: none;
+  }
+}
+/*------------------------------------------------------------
+  Feature Section
+  -------------------------------------------------------------*/
+.features-section .icon-block {
+  margin-left: 24px;
+  margin-right: initial;
+}
+.features-section .content-block {
+  padding-right: 100px;
+  padding-left: 0;
+}
+@media (max-width: 1199px) {
+  .features-section .content-block {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+/*------------------------------------------------------------
+  Testimonial Section
+  -------------------------------------------------------------*/
+.testimonial-section .quote-author .image-block {
+  margin-left: 18px;
+  margin-right: initial;
+}
+
+.testimonial-section .quote-author {
+  text-align: right;
+}
+
+@media (max-width: 360px) {
+  .testimonial-section .quote-author {
+    text-align: center;
+  }
+}
+/*------------------------------------------------------------
+  BLOG SECTION
+  -------------------------------------------------------------*/
+
+.list-inline {
+  padding-left: 0;
+  padding-right: initial;
+}
+.blog-section .blog-meta li i {
+  margin-right: initial;
+  margin-left: 6px;
+}
+.blog-section .blog-meta li {
+  margin-right: initial;
+  margin-left: 24px;
+}
+.blog-section .post-footer h4 {
+  margin-right: initial;
+  margin-left: 12px;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: initial;
+  margin-left: 0.5rem;
+}
+
+/*------------------------------------------------------------
+Contact Section
+  -------------------------------------------------------------*/
+.contact-section .icon-box {
+  margin-left: 24px;
+  margin-right: initial;
+}
+
+.contact-section .map-wrapper {
+  margin-left: 90px;
+  margin-right: initial;
+}
+@media (max-width: 1199px) {
+  .contact-section .map-wrapper {
+    margin-left: 0;
+  }
+}
+
+.contact-section a {
+  display: inline-block;
+}
+.contact-section a.phone,
+.contact-section a.email {
+  display: inline-block;
+  direction: ltr;
+}
+/*------------------------------------------------------------
+Site Footer
+  -------------------------------------------------------------*/
+
+.site-footer .footer-social li:first-child {
+  margin-right: 0;
+}
+
+.site-footer .footer-social li:last-child {
+  margin-right: 24px;
+}
+
+.site-footer .footer-bottom ul li:first-child {
+  margin-right: 0;
+}
+.site-footer .footer-bottom ul li {
+  margin-right: 0.5rem;
+}
+
+.site-footer .back-to-top {
+  right: initial;
+  left: var(--bs-gutter-x, 0.75rem);
+}
+.contact-section .de-contact-2 {
+  right: 4%;
+  left: initial;
+}
