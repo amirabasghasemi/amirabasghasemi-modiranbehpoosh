@@ -234,6 +234,9 @@ li {
   padding-top: 120px;
   padding-bottom: 60px;
 }
+.image-logo-header{
+  width: 150px;
+}
 .section-block .row > div {
   margin-bottom: 60px;
 }
@@ -365,6 +368,7 @@ h6 {
   width: 100%;
 }
 .hero-area .hero-head {
+  color: #fd562a;
   color: #fff;
   font-size: 90px;
 }
@@ -375,6 +379,7 @@ h6 {
 }
 .hero-area .hero-head strong {
   color: #fd562a;
+  font-size: 24px;
 }
 .hero-area .content-block {
   padding-left: 60px;
@@ -2115,7 +2120,7 @@ body #magicPointer.is-hover {
     display: none;
   }
   .hero-area .hero-head {
-    font-size: 36px;
+    font-size: 24px;
   }
   .hero-area .hero-head small {
     font-size: 18px;
