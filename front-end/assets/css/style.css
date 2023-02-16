@@ -249,7 +249,7 @@ body {
 }
 
 .header-box {
-  background-image: url("/front-end/assets/image/male-worker-factory.jpg");
+  background-image: url("/front-end/assets/image/young-man-working-warehouse-with-boxes.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -431,7 +431,7 @@ h6 {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
@@ -1879,19 +1879,6 @@ h6 {
   width: 100%;
 }
 
-/* overwriting magic mouse */
-body #magicMouseCursor {
-  border: 1px solid #fd562a !important;
-}
-
-body #magicPointer {
-  background: #fd562a !important;
-  z-index: 1000;
-}
-
-body #magicPointer.is-hover {
-  background: #fd562a !important;
-}
 
 /***********************************************************
   19. Media Queries 
@@ -1993,9 +1980,51 @@ body #magicPointer.is-hover {
 
   .site-header .navbar-collapse {
     background: #fff;
-    
+    justify-content: start;
   }
-
+  div.stroke ul li a,
+  div.fill ul li a {
+    position: relative;
+  }
+  div.stroke ul li a:after,
+  div.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  div.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  div.fill ul li a {
+    transition: all 2s;
+  }
+  
+  div.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  div.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  div.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+  
   .site-header .nav-social {
     padding: 1.2rem;
   }

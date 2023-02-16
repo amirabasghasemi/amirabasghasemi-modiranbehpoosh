@@ -9,23 +9,6 @@ $('.js-preloader').preloadinator({
   animationDuration: 400
 });
 
-
-/*================================================================= 
-    Magic Mouse 
-==================================================================*/
-
-var MagicMouseOptions = {
-    "cursorOuter": "circle-basic",
-    "hoverEffect": "circle-move",
-    "hoverItemMove": false,
-    "defaultCursor": false,
-    "outerWidth": 30,
-    "outerHeight": 30
-      };
-magicMouse(MagicMouseOptions);
-
-
-
 /*================================================================= 
     Isotope initialization 
 ==================================================================*/
