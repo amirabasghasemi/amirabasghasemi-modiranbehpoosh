@@ -1565,7 +1565,10 @@ h6 {
 .partner-section .image-wrapper {
   text-align: center;
 }
-
+.patern{
+  width: 150px;
+  height: 50px;
+}
 /***********************************************************
   16. Contact Section
 ************************************************************/
