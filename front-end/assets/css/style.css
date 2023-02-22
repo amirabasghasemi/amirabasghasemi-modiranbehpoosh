@@ -509,9 +509,9 @@ h6 {
 }
 
 .intro-section .item-wrapper {
-  box-shadow:  7px -7px 31px #f2f2f2,
-             -7px 7px 31px #ffffff;
-     padding: 48px;
+  box-shadow: 7px -7px 31px #f2f2f2,
+    -7px 7px 31px #ffffff;
+  padding: 48px;
   border-radius: 12px;
   position: relative;
   background: #fff;
@@ -776,9 +776,11 @@ h6 {
   position: relative;
   border-radius: 10px;
 }
-.box{
+
+.box {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
+
 .portfolio-section .box:before,
 .portfolio-section .box:after {
   content: '';
@@ -855,7 +857,7 @@ h6 {
   width: 48px;
   height: 48px;
   line-height: 49px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.874);
   display: block;
   text-align: center;
   border-radius: 50%;
@@ -909,20 +911,59 @@ h6 {
   background: #12c2e9;
 }
 
-.portfolio-section .btn-close {
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+  border-radius: 50px;
+}
+
+.text-box {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.btn-toltips {
   position: absolute;
   right: 54px;
-  top: 54px;
-  background: #fd562a;
-  color: #fff;
+  top: 110px;
+  border: 2px solid #fd582a9c;
+  color: #fd582a9c;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   line-height: 36px;
   border-radius: 50%;
   transition: 0.3s;
 }
-
+.btn-toltips:hover{
+color: rgb(133, 133, 133);
+border: 2px solid rgb(133, 133, 133);
+}
+.portfolio-section .bottom-clos:hover{
+  color: rgb(133, 133, 133);
+  border: 2px solid rgb(133, 133, 133);
+  }
+.portfolio-section .bottom-clos {
+  position: absolute;
+  right: 54px;
+  top: 54px;
+  border: 2px solid #fd582a9c;
+  color: #fd582a9c;
+  background-color: white;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  line-height: 36px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  width: 100px;
+  height: 100px;
+}
 .portfolio-section .item-content>div {
   margin-bottom: 0;
 }
@@ -1565,10 +1606,12 @@ h6 {
 .partner-section .image-wrapper {
   text-align: center;
 }
-.patern{
+
+.patern {
   width: 150px;
   height: 50px;
 }
+
 /***********************************************************
   16. Contact Section
 ************************************************************/
@@ -1991,10 +2034,12 @@ h6 {
     background: #fff;
     justify-content: start;
   }
+
   div.stroke ul li a,
   div.fill ul li a {
     position: relative;
   }
+
   div.stroke ul li a:after,
   div.fill ul li a:after {
     position: absolute;
@@ -2008,24 +2053,27 @@ h6 {
     background: #aaa;
     height: 1px;
   }
+
   div.stroke ul li a:hover:after {
     width: 100%;
   }
-  
+
   div.fill ul li a {
     transition: all 2s;
   }
-  
+
   div.fill ul li a:after {
     text-align: left;
     content: '.';
     margin: 0;
     opacity: 0;
   }
+
   div.fill ul li a:hover {
     color: #fff;
     z-index: 1;
   }
+
   div.fill ul li a:hover:after {
     z-index: -10;
     animation: fill 1s forwards;
@@ -2033,7 +2081,7 @@ h6 {
     -moz-animation: fill 1s forwards;
     opacity: 1;
   }
-  
+
   .site-header .nav-social {
     padding: 1.2rem;
   }
