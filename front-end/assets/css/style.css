@@ -958,7 +958,6 @@ border: 2px solid rgb(133, 133, 133);
   position: absolute;
   border: 3px solid #000;
   border-radius: 50%;
-  cursor: none;
   background-color: #000;
   width: 120px;
   height: 120px;
@@ -966,7 +965,15 @@ border: 2px solid rgb(133, 133, 133);
 
 .box-image-section{
   position: relative;
-  cursor: none;
+  overflow: hidden;
+}
+
+.image-scall {
+  transition: transform 0.25s;
+}
+
+.box-image-sectio:hover .image-scall {
+  transform: scale(1.1);
 }
 
 .portfolio-section .item-content>div {
